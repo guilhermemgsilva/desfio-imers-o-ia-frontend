@@ -184,7 +184,9 @@ function criarPersonagem(event) {
     
     const textoStartAventura = `Você é o mestre de uma aventura rpg de fantasia que se passa no cenário ${personagem.aventura}. interaja com player em turnos e quando oportuno peça para que o player role um dado e te diga o valor para que baseado no dado e nos pontos de habilidade ele tenha como resultado sucesso, conseguindo o que deseja ou fracasso, recebendo a consequência. ${descriçãoInicialDoPersonagem}`
 
-    fazerRequisicaoPost(textoStartAventura)
+    fazerRequisicaoPost(textoStartAventura).finally(() => {
+      loader.style.display = 'none'; // Hide the loader after the message is sent
+    });;
     const formularioCriacaoPersonagem = document.querySelector(".criacao-personagem")
     const tituloAventura = document.querySelector("#aventura")
     formularioCriacaoPersonagem.classList.remove("ativo")
@@ -212,7 +214,9 @@ function criarPersonagem(event) {
   botaoAcao.addEventListener("click", function(event) {
     event.preventDefault()
     const interacao = interacaoComMestre.value
-    fazerRequisicaoPost(interacao)
+    fazerRequisicaoPost(interacao).finally(() => {
+      loader.style.display = 'none'; // Hide the loader after the message is sent
+    });;
     interacaoComMestre.value = ""
     areaDeInteracao.innerHTML += `<div class="parte-do-player">${interacao}</div>`;
     areaDeInteracao.scrollTop = areaDeInteracao.scrollHeight
