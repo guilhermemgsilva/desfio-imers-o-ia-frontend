@@ -1,0 +1,290 @@
+{
+  "classesMedieval":[
+      {"nome": "Cavaleiro",
+          "descricao": "Guerreiro nobre e habilidoso em combate montado, especializado em armas e armadura pesada. Defensor da justiça e da honra.",
+          "img":".\\characters_img\\guerreiro.jpg",
+          "atributos":{
+            "forca":9,
+            "inteligencia":3,
+            "furtividade":3,
+            "defesa": 7,
+            "ataque":6,
+            "magia":1,
+            "labia":2
+          }
+      },
+      {
+          "nome": "Mago",
+          "descricao": "Mestre das artes arcanas, capaz de conjurar feitiços poderosos para atacar, defender ou manipular o mundo ao seu redor." ,
+          "img":".\\characters_img\\mago.jpg",
+          "atributos":{
+            "forca":4,
+            "inteligencia":6,
+            "furtividade":2,
+            "defesa": 6,
+            "ataque":7,
+            "magia":9,
+            "labia":4
+          }
+      },
+      {
+          "nome": "Clérigo",
+          "descricao": "Servo devoto de uma divindade, com poderes de cura e proteção divina. Combate as forças do mal e guia os fiéis.",
+          "img":".\\characters_img\\clerigo.jpg",
+          "atributos":{
+            "forca":2,
+            "inteligencia":6,
+            "furtividade":3,
+            "defesa": 6,
+            "ataque":4,
+            "magia":2,
+            "labia":7
+          }
+      },
+      {
+          "nome": "Ladino",
+          "descricao": "Especialista em furtividade, armadilhas e subterfúgios. Ágil e astuto, opera nas sombras e ataca de surpresa.",
+          "img":".\\characters_img\\ladino.jpg",
+          "atributos":{
+            "forca":7,
+            "inteligencia":6,
+            "furtividade":8,
+            "defesa":3,
+            "ataque":6,
+            "magia":2,
+            "labia":2
+          }
+      },
+      {
+          "nome": "Bardo",
+          "descricao": "Músico inspirador e contador de histórias, capaz de elevar o moral dos aliados e confundir os inimigos com suas palavras e melodias.",
+          "img":".\\characters_img\\bardo.jpg",
+          "atributos":{
+            "forca":3,
+            "inteligencia":7,
+            "furtividade":3,
+            "defesa": 2,
+            "ataque":3,
+            "magia":1,
+            "labia":8
+          }
+          
+      }
+    ],
+
+    "classesEspacial":[
+    {
+      "nome": "Patrulheiro Estelar",
+      "descricao": "Piloto habilidoso e explorador espacial, patrulha a galáxia mantendo a ordem e protegendo os inocentes. Especialista em combate espacial e tecnologia de naves.",
+      "img":".\\characters_img\\patrulheiro-estrelar.jpg",
+          "atributos":{
+            "forca":5,
+            "inteligencia":7,
+            "furtividade":3,
+            "defesa": 6,
+            "ataque":8,
+            "magia":1,
+            "labia":2
+          }
+    },
+    {
+      "nome": "Ciborgue",
+      "descricao": "Humano aprimorado com tecnologia cibernética, possui força, resistência e habilidades sobre-humanas. Combate corpo a corpo e uso de armas avançadas.",
+      "img":".\\characters_img\\ciborgue.jpg",
+          "atributos":{
+            "forca":9,
+            "inteligencia":4,
+            "furtividade":3,
+            "defesa": 7,
+            "ataque":7,
+            "magia":1,
+            "labia":2
+          }
+    },
+    {
+      "nome": "Psionico",
+      "descricao": "Mestre dos poderes da mente, capaz de telecinese, telepatia e controle mental. Usa a força da sua mente para atacar e manipular os inimigos.",
+      "img":".\\characters_img\\psionico.png",
+      "atributos":{
+        "forca":4,
+        "inteligencia":7,
+        "furtividade":2,
+        "defesa": 6,
+        "ataque":5,
+        "magia":8,
+        "labia":2
+      }
+    },
+    {
+      "nome": "Xenolinguista",
+      "descricao": "Especialista em comunicação com espécies alienígenas, habilidoso em traduzir idiomas e compreender culturas extraterrestres. Negociação e diplomacia.",
+      "img":".\\characters_img\\xenoliguista.jpg",
+          "atributos":{
+            "forca":4,
+            "inteligencia":8,
+            "furtividade":3,
+            "defesa": 7,
+            "ataque":3,
+            "magia":1,
+            "labia":9
+          }
+    },
+    {
+      "nome": "Mercador Espacial",
+      "descricao": "Astuto comerciante e negociador, viaja pela galáxia em busca de lucro e oportunidades. Habilidades de barganha, conhecimento de mercados e logística espacial.",
+      "img":".\\characters_img\\mercador-espacial.jpg",
+          "atributos":{
+            "forca":3,
+            "inteligencia":7,
+            "furtividade":6,
+            "defesa": 3,
+            "ataque":3,
+            "magia":1,
+            "labia":7
+          }
+    }
+  ],
+
+   "classesVitoriana" :[
+    {
+      "nome": "Caçador de Monstros",
+      "descricao": "Especialista em caçar e eliminar criaturas sobrenaturais, habilidoso com armas e armadilhas. Conhecimento de folclore e monstros." ,
+      "img":".\\characters_img\\cacador-de-monstros.jpg",
+          "atributos":{
+            "forca":8,
+            "inteligencia":7,
+            "furtividade":3,
+            "defesa": 6,
+            "ataque":7,
+            "magia":2,
+            "labia":2
+          }
+    },
+    {
+      "nome": "Inventor",
+      "descricao": "Gênio criador de dispositivos tecnológicos e engenhocas. Usa a ciência e a engenhosidade para resolver problemas e enfrentar desafios." ,
+      "img":".\\characters_img\\inventor.jpg",
+          "atributos":{
+            "forca":2,
+            "inteligencia":8,
+            "furtividade":3,
+            "defesa": 5,
+            "ataque":3,
+            "magia":4,
+            "labia":2
+          }
+    },
+    {
+      "nome": "Ocultista",
+      "descricao": "Investigador do paranormal e mestre das artes místicas. Conhecimento de rituais, símbolos e entidades sobrenaturais.",
+      "img":".\\characters_img\\ocultista.jpg",
+          "atributos":{
+            "forca":3,
+            "inteligencia":6,
+            "furtividade":3,
+            "defesa": 6,
+            "ataque":5,
+            "magia":6,
+            "labia":2
+          }
+    },
+    {
+      "nome": "Espião",
+      "descricao": "Mestre do disfarce, da infiltração e da coleta de informações. Opera nas sombras e desvenda segredos com astúcia e furtividade.",
+      "img":".\\characters_img\\espiao.jpg",
+          "atributos":{
+            "forca":4,
+            "inteligencia":6,
+            "furtividade":8,
+            "defesa": 4,
+            "ataque":3,
+            "magia":1,
+            "labia":5
+          }
+    },
+    {
+      "nome": "Aristocrata",
+      "descricao": "Influente membro da alta sociedade, com riqueza, conexões e poder político. Habilidades sociais, etiqueta e manipulação.",
+      "img":".\\characters_img\\aristocrata.jpg",
+          "atributos":{
+            "forca":2,
+            "inteligencia":7,
+            "furtividade":3,
+            "defesa": 7,
+            "ataque":5,
+            "magia":1,
+            "labia":8
+          }
+    }
+   ],
+
+   "classesFaroeste" : [
+    {
+      "nome": "Pistoleiro",
+      "descricao": "Atirador de elite com reflexos rápidos e mira impecável. Habilidoso com revólveres e rifles, especialista em duelos e tiroteios.",
+      "img":".\\characters_img\\pistoleiro.jpg",
+          "atributos":{
+            "forca":5,
+            "inteligencia":3,
+            "furtividade":3,
+            "defesa": 8,
+            "ataque":7,
+            "magia":1,
+            "labia":2
+          }
+    },
+    {
+      "nome": "Xerife",
+      "descricao": "Defensor da lei e da ordem, responsável por manter a paz na cidade. Habilidades de liderança, combate e investigação.",
+      "atributos":{
+        "forca":3,
+        "inteligencia":6,
+        "furtividade":2,
+        "defesa": 8,
+        "ataque":7,
+        "magia":1,
+        "labia":4
+      }
+    },
+    {
+      "nome": "Fora da Lei",
+      "descricao": "Criminoso habilidoso e sobrevivente, vive à margem da sociedade. Furtividade, combate e conhecimento do submundo." ,
+      "atributos":{
+        "forca":3,
+        "inteligencia":4,
+        "furtividade":7,
+        "defesa": 5,
+        "ataque":6,
+        "magia":6,
+        "labia":4
+      }
+    },
+    {
+      "nome": "Caçador de Recompensas",
+      "descricao": "Rastreador e caçador de criminosos procurados, movido pela recompensa. Habilidades de rastreio, sobrevivência e combate.",
+      "atributos":{
+        "forca":6,
+        "inteligencia":6,
+        "furtividade":2,
+        "defesa": 6,
+        "ataque":7,
+        "magia":1,
+        "labia":3
+      }
+    },
+    {
+      "nome": "Xamã",
+      "descricao": "Conectado à natureza e aos espíritos, possui conhecimento de ervas medicinais e rituais. Cura, sabedoria e conexão com o mundo espiritual." ,
+      "atributos":{
+        "forca":4,
+        "inteligencia":6,
+        "furtividade":2,
+        "defesa": 5,
+        "ataque":6,
+        "magia":8,
+        "labia":2
+      
+    }
+  }
+  ]
+}

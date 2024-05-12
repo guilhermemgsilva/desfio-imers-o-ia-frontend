@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RPG de Mesa com Mestre Gemini</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>RPG de Mesa com Mestre Gemini</h1>
+    </header>
+
+    <section class="escolha-campanha" >
+        <h2 class="titulo-da-area-de-campanha">Escolha sua Campanha:</h2>
+        <div class="area-de-cards">
+            <div class="campanha-card">
+                <button id="botao-medieval" class="botao-campanha">Fantasia Medieval</button>
+                <div id="descricao-medieval" class="descricao-campanha">
+                    <p><strong>Um mundo de bravos cavaleiros, poderosos magos e temíveis dragões.</strong> Embarque em missões épicas, explore reinos encantados e enfrente criaturas míticas. Proteja o reino das forças das trevas ou busque glória em torneios e batalhas. O destino do reino está em suas mãos!</p>
+                    <button class="botao-escolha" onclick="escolherCampanha('Medieval')">Escolher Campanha</button>
+                </div>
+            </div>
+            <div class="campanha-card">
+                <button id="botao-espacial" class="botao-campanha">Fantasia Espacial</button>
+                <div id="descricao-espacial" class="descricao-campanha">
+                    <p><strong>Viaje pelas estrelas e descubra os segredos do universo.</strong> Pilote naves espaciais, explore planetas alienígenas e encontre civilizações extraterrestres. Enfrente piratas espaciais, negocie com mercadores intergalácticos ou desvende mistérios cósmicos. A galáxia é o seu playground!</p>
+                    <button class="botao-escolha" onclick="escolherCampanha('Espacial')">Escolher Campanha</button>
+                </div>
+            </div>
+            <div class="campanha-card">
+                <button id="botao-vitoriana" class="botao-campanha">Fantasia Vitoriana</button>
+                <div id="descricao-vitoriana" class="descricao-campanha">
+                    <p><strong> Londres, uma cidade envolvida em mistério e escuridão.</strong> Explore as ruas enevoadas, desvende conspirações e enfrente criaturas sobrenaturais. Seja um caçador de monstros, um inventor brilhante ou um ocultista místico. O destino da cidade está em jogo!</p>
+                    <button class="botao-escolha" onclick="escolherCampanha('Vitoriana')">Escolher Campanha</button>
+                </div>
+            </div>
+            <div class="campanha-card">
+                <button id="botao-faroeste" class="botao-campanha">Fantasia de Faroeste</button>
+                <div id="descricao-faroeste" class="descricao-campanha">
+                    <p><strong> Aventure-se no Velho Oeste, uma terra sem lei. </strong>Cavalgue pelos vastos desertos, participe de duelos emocionantes e viva a vida na fronteira. Seja um pistoleiro implacável, um xerife justiceiro ou um fora da lei em busca de redenção. O oeste selvagem aguarda!</p>
+                    <button class="botao-escolha" onclick="escolherCampanha('Faroeste')">Escolher Campanha</button>
+                </div>
+            </div>
+            
+           
+    </div><!---fim da area onde estão os cards-->
+    
+    </section>
+
+   
+    <!-- Aarea de criação de personagem -->
+    <section id="criacao-personagem" class="criacao-personagem">
+        <h2>Crie seu Personagem:</h2>
+        <form id="formulario-personagem">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+    
+            <label for="descricao">Descrição Física:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+
+            <label for="classe">Classe:</label>
+            <div id="classe">
+
+            </div>
+            <!-- <select id="classe" name="classe">
+            </select> -->
+
+            <label for="historia">Conte sua história:</label>
+            <textarea id="historia" name="historia"></textarea>
+    
+            
+    
+            <button type="submit">Criar Personagem</button>
+        </form>
+    </section>
+    
+    <section id="aventura">
+        <h2>Aventura!</h2>
+        <!-- Adicione aqui a área para interação com o mestre -->
+        <div id="desenrolar-da-aventura"></div>
+        <form id="conversa-com-mestre">
+            <input type="text" id="fala-com-mestre">
+            <button id="agir" type="submit"><</button>
+        </form>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

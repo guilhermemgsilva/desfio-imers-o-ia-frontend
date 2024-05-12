@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    font-family: "Poetsen One", sans-serif;
+}
+body{
+    
+    color: aliceblue;
+    background-image: url("./background.jpg");
+    object-fit: cover;
+    
+    height: 100vhS;
+}
+/* Exemplo de estilo para o header */
+header {
+    
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal
+  
+}
+.titulo-da-area-de-campanha{
+  margin: 20px;
+  background-color: #908e9b;
+  padding: 5px;
+  color: #000;
+  border-radius: 10px;
+}
+.titulo-da-area-de-campanha.desativado{
+  display:none;
+}
+.escolha-campanha{
+    height: 23rem;
+    
+    transition: height 0.5s ease-in-out;
+}
+.escolha-campanha.ativo{
+    height: 3rem;
+}
+.area-de-cards{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.campanha-card{
+    margin: 5px;
+    height: 5rem;
+    width: 15rem;
+    
+}
+
+
+.botao-campanha {
+    height: 5rem;
+    width: 15rem;
+    background-color: #ffffff; /* Cor de fundo verde */
+    color: rgb(0, 0, 0); /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mãozinha */
+    font-size: 1.3rem;
+}
+
+.botao-campanha:hover {
+    background-color: #d3d3d4; /* Cor mais escura ao passar o mouse */
+}
+  /* Estilo para as descrições */
+.descricao-campanha {
+    margin:20px 0 10px 0;
+    overflow: hidden; /* Para o efeito de slide */
+    max-height: 0; /* Altura inicial 0 */
+    transition: max-height 0.5s ease-in-out; /* Transição suave */
+  }
+  
+.descricao-campanha.ativo {
+    max-height: 20rem;  /*Altura quando ativa */
+    background: #ffffff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    
+    
+  }
+  
+  /* Estilo para o botão "Escolher Campanha" */
+.botao-escolha {
+    background-color: #008CBA; /* Cor de fundo azul */
+    color: white;
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-left: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .criacao-personagem {
+    display: none;
+    opacity: 0; /* Initially set opacity to 0 (transparent) */
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  .criacao-personagem.ativo {
+    opacity: 1; /* Set opacity to 1 (fully opaque) when active */
+    display: block;
+    transition: display 1s ease-in-out;
+  }
+  .criacao-personagem.remover {
+    display: none;
+  }
+  .criacao-personagem h2{
+    background-color: #908e9b;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #formulario-personagem{
+    margin: auto;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    opacity: 0.96;
+
+  }
+  #formulario-personagem label{
+    color: #000;
+
+  }
+  #formulario-personagem label,input, textarea{
+    margin: 20px;
+  }
+
+  #formulario-personagem textarea{
+    height: 5rem;
+    resize: none;
+    outline: none;
+  } 
+
+  #formulario-personagem button{
+    margin-top: 5px;
+    height: 2rem;
+    background: #008CBA;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+  }
+
+  #formulario-personagem button:hover{
+    background-color: #10799c;
+  }
+#classe{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ .classe-card{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 12rem;
+    border: 1px solid #000;
+    background-color: #1f2763;
+    color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+  }
+  .classe-card:hover{
+    height: 16rem;
+    }
+
+  .classe-card img{
+    height: 12rem;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .titulo-e-texto-no-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20rem;
+    height: 12rem;
+    
+    
+  }
+  .img-e-atributos-no-card {
+    width: 12.5rem;
+  }
+  .img-e-atributos-no-card ul{
+    margin-top: 0.3rem;
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.2rem;
+    list-style-type:none;
+  }
+
+  #aventura{
+    
+    opacity: 0; /* Initially set opacity to 0 (transparent) */
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  #aventura.ativo {
+    opacity: 1; /* Set opacity to 1 (fully opaque) when active */
+    
+  }
+  #aventura{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #aventura #fala-com-mestre{
+    margin: 1rem 0 1rem 0;
+    width: 60rem;
+    height: 2.5rem;
+    outline: none;
+    border: 1px solid #ccc;
+  box-shadow: none; /* Initial box-shadow: no glow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  border-radius: 10px;
+ 
+  }
+
+  #aventura #fala-com-mestre:focus{
+    outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px 2px #d0ff00; /* Glow effect on focus */
+  }
+  #aventura #agir{
+    height: 2.9rem;
+    width: 2.5rem;
+    border-radius: 10px;
+  }
+
+  #desenrolar-da-aventura{
+    
+    height: 30rem;
+    width: 70rem;
+    overflow: scroll;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+  overflow-y: auto;
+  background-color: #908e9b;
+  
+  border-radius: 10px;
+    
+  }
+  .parte-do-player{
+    text-align: right;
+    font-family: "Sedan SC", serif;
+    font-size: 1.4rem;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .parte-do-mestre{
+    font-family: "Sedan SC", serif;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+  }
